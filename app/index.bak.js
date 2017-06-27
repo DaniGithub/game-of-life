@@ -22,8 +22,6 @@ export default class Root extends React.Component {
     }
   }
 
-  
-
   sizeHandler(e) {
     let newWidth = 0, newHeight = 0;
     if(e.currentTarget.classList.contains('small')) {
