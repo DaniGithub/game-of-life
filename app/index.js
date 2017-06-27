@@ -179,12 +179,16 @@ export default class Root extends React.Component {
         this.draw(ctx)
       }
     },1000/speed)
-  }  
+  } 
+
+  componentDidMount() {
+    document.querySelector('.medium').click()
+  } 
 
   componentDidUpdate() {
     let canvas = document.getElementById('game'), ctx = canvas.getContext('2d');
     this.buildCells();
- 
+    
 
     this.start.call(this, 10, ctx)
     //requestAnimationFrame(this.draw.bind(this, ctx));
